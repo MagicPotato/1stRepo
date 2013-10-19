@@ -38,44 +38,27 @@
     </style>
 </head>
 <body>
+
 <div class="zago">
     <asp:Label ID="Zagolovok" runat="server" Text="Скачивание файлов" Font-Size="50"></asp:Label>
 </div>
 
 <form id="form1" runat="server">
+        
+        <% foreach (System.Collections.Generic.KeyValuePair<string, string> pair in collection)
+           { %>
 
-<div class="nazv">
-    <asp:Label ID="nazv1" runat="server" Text="Файл 1"></asp:Label>
-    <div class="kn">
-        <asp:Button ID="Button2" runat="server" Text="Удалить" />
-    </div>
-</div>
-<div class="opis">
-    <asp:Label ID="opis1" runat="server" Text="Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла Описание 1 файла "></asp:Label>
-</div>
-
-
-<div class="nazv">
-    <asp:Label ID="nazv2" runat="server" Text="Файл 2"></asp:Label>
-    <div class="kn">
-        <asp:Button ID="Button3" runat="server" Text="Удалить"/>
-    </div>
-</div>
-<div class="opis">
-    <asp:Label ID="opis2" runat="server" Text="Описание 2 файла Описание 2 файла  "></asp:Label>
-</div>
-
-
-<div class="nazv">
-    <asp:Label ID="nazv3" runat="server" Text="Файл 3"></asp:Label>
-    <div class="kn">
-        <asp:Button ID="Button4" runat="server" Text="Удалить" />
-    </div>
-</div>
-<div class="opis">
-    <asp:Label ID="opis3" runat="server" Text="Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла Описание 3 файла "></asp:Label>
-</div>
-
+        <div class="nazv">
+         <%=pair.Key %>
+          <div class="kn">
+                <asp:Button ID="Button5" runat="server" Text="Удалить" />
+          </div>
+        </div>
+        <div class="opis">
+            <%=pair.Value %>        
+        </div>                       
+        <% } %>
+        
 <div class="zago" >
     <asp:Button ID="Button1" runat="server" Text="загрузка файлов" Width="200" Height="100" Font-Size="16" OnClick="Button1_Click"/>
 </div>
