@@ -1,0 +1,42 @@
+﻿body {
+}
+
+.green
+{
+	background-color:green;
+}
+
+div
+{
+	clear:both;
+}
+
+.name
+{
+	clear:both;
+	float:left;
+}
+
+.loadbutton
+{
+	clear:both;
+	float:left;
+}
+
+.changebutton
+{
+	clear:both;
+	float:left;
+}
+
+.deletebutton
+{
+	clear:both;
+	float:left;
+}
+
+.description
+{
+	clear:both;
+	float:left;
+}

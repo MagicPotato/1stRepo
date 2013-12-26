@@ -1,0 +1,59 @@
+﻿body 
+{
+	background-color:#84b5ff;
+}
+
+#line
+{
+	border:3px solid #6495ED;
+}
+
+div
+{
+	clear:both;
+}
+
+.BLOK
+{
+	border:3px solid #6495ED;
+	width:300px;
+	border-radius: 5px;
+	background-color: #BCD2EE;
+	margin:50px;
+	display:inline-block;
+}
+
+.name
+{
+	color: #3D59AB;
+}
+
+.description
+{
+	border:3px solid #74a5fD;
+	border-radius: 5px;
+	color: #ffffff;
+	font-family: Verdana, sans-serif;
+}
+
+#ControlPanel
+{
+	position: fixed; /* Абсолютное позиционирование */
+    top: 15%; /* Положение от нижнего края */
+    right: 5%; /* Положение от правого края */
+}
+
+.Label
+{
+	margin:auto;
+	text-align:center;
+}
+
+#rptr
+{
+	padding-top: 50px;
+	width:70%;
+	border:3px solid #74a5fD;
+	border-radius: 5px;
+	background-color: #a4d5ff;
+}
